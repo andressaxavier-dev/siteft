@@ -1,0 +1,23 @@
+// script.js
+function openModal(tipo) {
+    let titulo = '';
+    let descricao = '';
+    switch(tipo) {
+        case 'receitas':
+            titulo = '📘 Receitas Pedagógicas';
+            descricao = 'Estratégicas didáticas organizadas como se fossem receitas culinárias...';
+            break;
+        case 'storybooks':
+            titulo = '📖 Storybooks Infantis';
+            descricao = 'Histórias ilustradas pensadas para estimular a imaginação...';
+            break;
+        // Coloque os outros casos aqui
+    }
+    document.getElementById('modal-title').textContent = titulo;
+    document.getElementById('modal-description').textContent = descricao;
+    document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+}

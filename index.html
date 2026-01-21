@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Site Oficial FT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  let slides = document.querySelectorAll('.slide');
+  let index = 0;
+
+  function trocarSlide() {
+    slides[index].classList.remove('ativo');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('ativo');
+  }
+
+  setInterval(trocarSlide, 4000); // troca a cada 4 segundos
+</script>
+
+<body>
+
+<nav class="menu">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="portifolio.html">Materiais</a>
+    <a href="loja.html">Loja</a>
+    <a href="contato.html">Contato</a>
+</nav>
+
+<header class="topo slider animar-topo">
+
+  <div class="slides">
+    
+    <!-- SLIDE 1 -->
+    <div class="slide ativo">
+      <img src="imagens/logo-ft.png" alt="Logo Franceli Teles" class="logo animar-logo">
+      <p class="animar-texto">
+        <strong>Materiais educacionais para Educação Infantil</strong>
+      </p>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="slide">
+      <img src="imagens/slide-1.jpg" alt="Materiais pedagógicos">
+      <p>
+        <strong>Sequências didáticas prontas e editáveis</strong>
+      </p>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="slide">
+      <img src="imagens/slide-2.jpg" alt="Educação infantil">
+      <p>
+        <strong>Conteúdos lúdicos e alinhados à BNCC</strong>
+      </p>
+    </div>
+
+  </div>
+
+</header>
+
+
+
+<footer>
+    <p>© 2026 • Franceli Teles • Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
+
+

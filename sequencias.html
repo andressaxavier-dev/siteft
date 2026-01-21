@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Storybooks Infantis | FT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo topo-interno">
+    <img src="imagens/logo-ft.png" alt="Logo Franceli Teles" class="logo">
+</header>
+
+<main class="container sequencias">
+  <h2>📘 Sequência didática</h2>
+  <p>
+    Este material foi desenvolvido para estimular a oralidade,
+    a imaginação e o interesse pela leitura na Educação Infantil.
+  </p>
+
+
+  <div class="produtos">
+    <div class="produto">
+      <img src="imagens/sequenciacirco.png" alt="Storybook exemplo">
+      <p>Sequencia Didiática: Circo</p>
+      <p><strong>R$ 12,90</strong></p>
+      <button onclick="abrirPixModal('https://mpago.la/2V3zcgd')">Comprar</button>
+    </div>
+
+    <div class="produto">
+      <img src="imagens/sequencia2.png" alt="Storybook exemplo">
+      <p>Sequencia Didiática: Carnaval</p>
+      <p><strong>R$ 12,90</strong></p>
+      <button onclick="abrirPixModal('https://mpago.la/2V3zcgd')">Comprar</button>
+    </div>
+
+    <div class="produto">
+      <img src="imagens/sequencia3.png" alt="Storybook exemplo">
+      <p>Sequencia Didiática: Formas e Texturas</p>
+      <p><strong>R$ 12,90</strong></p>
+      <button onclick="abrirPixModal('https://mpago.la/2V3zcgd')">Comprar</button>
+    </div>
+    <div class="produto">
+      <img src="imagens/sequencia4.png" alt="Storybook exemplo">
+      <p>Sequencia Didiática: Dia das mães</p>
+      <p><strong>R$ 12,90</strong></p>
+      <button onclick="abrirPixModal('https://mpago.la/2V3zcgd')">Comprar</button>
+    </div>
+
+  </div>
+
+  <a href="portifolio.html" class="btn-link">Voltar</a>
+</main>
+
+<footer>
+  <p>© 2026 • Franceli Teles</p>
+</footer>
+
+  <!-- ================= MODAL PIX ================= -->
+<!-- ================= MODAL PAGAMENTO ================= -->
+<div id="pixModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharPixModal()">&times;</span>
+
+    <h2>Finalizar pagamento</h2>
+    <p><strong>Entrega automática após o pagamento</strong></p>
+
+    <a
+      id="linkPagamento"
+      href="#"
+      target="_blank"
+      class="btn-comprar"
+    >
+      Pagar com Mercado Pago
+    </a>
+  </div>
+</div>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+function abrirPixModal(link) {
+  document.getElementById("pixModal").style.display = "block";
+  document.getElementById("linkPagamento").href = link;
+}
+
+function fecharPixModal() {
+  document.getElementById("pixModal").style.display = "none";
+}
+
+// Fecha o modal clicando fora
+window.onclick = function(event) {
+  const modal = document.getElementById("pixModal");
+  if (event.target === modal) {
+    fecharPixModal();
+  }
+}
+</script>
+
+</body>
+</html>
