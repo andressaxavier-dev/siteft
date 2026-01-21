@@ -707,4 +707,54 @@ button:hover {
         opacity: 1;
         transform: translateY(0);
     }
+
+}
+
+
+/* RESPONSIVO - PÁGINA SOBRE */
+@media (max-width: 900px) {
+
+  .sobre-box {
+    grid-template-columns: 1fr; /* vira uma coluna */
+    gap: 25px;
+    text-align: center;
+  }
+
+  .sobre-foto img {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .sobre-texto {
+    text-align: left;
+    padding: 0 10px;
+  }
+
+}
+
+/* MOBILE PEQUENO */
+@media (max-width: 480px) {
+
+  .topo {
+    padding: 60px 15px;
+  }
+
+  .logo {
+    max-width: 220px;
+  }
+
+  .menu a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .sobre-texto p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
 }
