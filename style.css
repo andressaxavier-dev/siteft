@@ -309,6 +309,55 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
+/* ================================
+   MODAL PIX
+================================ */
+
+.modal {
+    display: none; /* controlado pelo JS */
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    max-width: 420px;
+    width: 90%;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.modal-content h2 {
+    color: #3F3368;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #999;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.btn-com
+
 
 /* ================================
    RESPONSIVO
@@ -332,4 +381,5 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 
