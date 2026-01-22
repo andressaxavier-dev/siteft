@@ -14,12 +14,26 @@ body {
 
 /* TOPO */
 .topo {
-    background-color: #E6E0F5;
-    padding: 200px 20px;
+    width: 100%;
+    height: 140px;            /* MENOR */
+    background-image: url("imagens/banner-educacional.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 20px;
     gap: 6px;
+}
+
+
+body.home .topo {
+    height: 550px;            /* MAIOR só na home */
+    padding: 50px 20px;
 }
 
 .topo h1 {
@@ -42,25 +56,27 @@ body {
     max-width: 400px;   /* tamanho máximo no desktop */
     width: 100%;        /* adapta ao container */
     height: auto;       /* mantém proporção */
-    margin: 0 auto 15px;
+    margin: 0 auto;
     display: block;
+    padding: 200px 20px;
+
 }
 
 /* MENU */
 .menu {
-    background-color: #dbdbdb;
+    background-color: #e8e8e8;
     padding: 15px;
 }
 
 .menu a {
-    color: #5B4B8A;
+    color: #483975;
     text-decoration: none;
     margin: 0 15px;
     font-weight: 500;
 }
 
 .menu a:hover {
-    color: #5f7087;
+    color: #34445b;
 }
 
 
@@ -246,14 +262,14 @@ footer {
 
 
 .produto strong {
-    color: #5a6ba1;
+    color: #5b3977;
     font-size: 16px;
 }
 
 .produto button {
     margin-top: 15px;
     padding: 10px 24px;
-    background-color: #4A6FA5;
+    background-color: #79723f;
     color: #FFFFFF;
     border: none;
     border-radius: 8px;
@@ -262,7 +278,7 @@ footer {
 }
 
 .produto button:hover {
-    background-color: #3F3368;
+    background-color: #6a608a;
 }
 
 /* ESTILO APENAS PARA SEQUÊNCIAS DIDÁTICAS */
@@ -293,7 +309,7 @@ footer {
 
 .sequencias .produto p {
     font-size: 16px;
-    color: #3F3368;
+    color: #4c436b;
     margin-top: 10px;
 }
 
@@ -342,7 +358,7 @@ footer {
 footer {
     margin-top: 60px;
     padding: 20px;
-    background-color: #3F3368;
+    background-color: #4a3f70;
     color: #FFFFFF;
     font-size: 14px;
 }
@@ -622,7 +638,7 @@ button:hover {
 }
 
 .btn-pix {
-  background: #7a5cff;
+  background: #736e89;
   color: #fff;
   border: none;
   padding: 10px 18px;
