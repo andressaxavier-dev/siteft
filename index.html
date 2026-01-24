@@ -41,9 +41,48 @@
   </div>
 
 </header>
+<section class="capas-section fade-scroll">
+  <h2>Capas de Caderno Personalizadas</h2>
+  <p>
+    Criamos capas exclusivas, personalizadas com o nome da criança,
+    tema escolhido e identidade da escola.
+  </p>
+
+  <div class="capas-fotos">
+    <!-- Substitua as imagens depois -->
+    <img src="imagens/capa1.jpeg" alt="Capa personalizada">
+    <img src="imagens/capa 5.jpeg" alt="Capa personalizada">
+    <img src="imagens/capa 3.jpeg" alt="Capa personalizada">
+  </div>
+</section>
 
 
+<script>
+  const elementos = document.querySelectorAll('.fade-scroll');
 
+  function mostrarAoRolar() {
+    elementos.forEach(el => {
+      const topo = el.getBoundingClientRect().top;
+      const alturaTela = window.innerHeight * 0.85;
+
+      if (topo < alturaTela) {
+        el.classList.add('aparecer');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', mostrarAoRolar);
+  mostrarAoRolar();
+</script>
+
+<a 
+  href="https://wa.me/5575999060536?text=Olá! Gostaria de solicitar uma capa personalizada."
+  class="whatsapp-fixo"
+  target="_blank"
+  aria-label="Falar no WhatsApp"
+>
+  <img src="imagens/whatsapp.png" alt="WhatsApp">
+</a>
 
 <footer>
     <p>© 2026 • Franceli Teles • Todos os direitos reservados</p>
