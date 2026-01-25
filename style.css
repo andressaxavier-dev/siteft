@@ -977,3 +977,10 @@ button:hover {
     max-width: 220px;
   }
 }
+@media (max-width: 480px) {
+  .capas-fotos img {
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+  }
+}
