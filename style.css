@@ -984,3 +984,47 @@ button:hover {
     opacity: 1;
   }
 }
+/* ===== MENU MOBILE ===== */
+.menu-mobile {
+  display: none;
+  text-align: center;
+  padding: 10px;
+}
+
+#btn-menu {
+  background: #5B4B8A;
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#menu-opcoes {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+#menu-opcoes.aberto {
+  max-height: 300px;
+}
+
+/* Mostrar só no mobile */
+@media (max-width: 768px) {
+  .menu {
+    display: none;   /* esconde menu normal */
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+}
