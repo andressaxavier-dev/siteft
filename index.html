@@ -6,18 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
-<script>
-  let slides = document.querySelectorAll('.slide');
-  let index = 0;
 
-  function trocarSlide() {
-    slides[index].classList.remove('ativo');
-    index = (index + 1) % slides.length;
-    slides[index].classList.add('ativo');
-  }
-
-  setInterval(trocarSlide, 4000);
-</script>
 <body class="home">
 <nav class="menu">
     <a href="index.html">Início</a>
@@ -36,7 +25,35 @@
       </p>
     </div>
   </div>
+
+  <div class="menu-mobile">
+  <button id="btn-menu">☰ Menu</button>
+
+  <div id="menu-opcoes">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="materiais.html">Materiais</a>
+    <a href="loja.html">Loja</a>
+    <a href="contato.html">Contato</a>
+  </div>
+</div>
+
 </header>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const btnMenu = document.getElementById("btn-menu");
+  const menuOpcoes = document.getElementById("menu-opcoes");
+
+  if (btnMenu && menuOpcoes) {
+    btnMenu.addEventListener("click", () => {
+      menuOpcoes.classList.toggle("aberto");
+    });
+  }
+
+});
+</script>
 
 <!-- SEGUNDO TOPO COM CAPAS DENTRO -->
 <section class="topo topo-final">
@@ -88,6 +105,26 @@
 <footer>
     <p>© 2026 • Franceli Teles • Todos os direitos reservados</p>
 </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const slides = document.querySelectorAll('.slide');
+  let index = 0;
+
+  if (slides.length > 0) {
+    slides[0].classList.add('ativo');
+
+    setInterval(() => {
+      slides[index].classList.remove('ativo');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('ativo');
+    }, 4000);
+  }
+
+});
+</script>
+
 
 </body>
 </html>
