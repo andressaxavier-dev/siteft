@@ -115,6 +115,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnMenu = document.getElementById("btn-menu");
   const menuOpcoes = document.getElementById("menu-opcoes");
 
+  if (menuOpcoes) {
+    menuOpcoes.classList.remove("aberto"); // 🔒 garante fechado ao carregar
+  }
+
   if (btnMenu && menuOpcoes) {
     btnMenu.addEventListener("click", () => {
       menuOpcoes.classList.toggle("aberto");
@@ -122,7 +126,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 });
-
 </script>
 
 
